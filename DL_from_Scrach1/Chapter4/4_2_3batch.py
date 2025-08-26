@@ -1,5 +1,5 @@
 import sys
-sys.path.append('C:\\Users\\mstk\\Python学習用フォルダ\\DeepLearning\\DL_from_Scrach1\\deep-learning-from-scratch-master')
+sys.path.append('DeepLearning\\DL_from_Scrach1\\deep-learning-from-scratch-master')
 
 import numpy as np
 from DLdataset.mnist import load_mnist

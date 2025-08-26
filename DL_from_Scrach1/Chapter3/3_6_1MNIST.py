@@ -4,7 +4,7 @@ import numpy as np
 import sys
 
 #ファイルのパスを指定する
-sys.path.append('C:\\Users\\mstk\\Python学習用フォルダ\\DeepLearning\\DL_from_Scrach1\\deep-learning-from-scratch-master')
+sys.path.append('DeepLearning\\DL_from_Scrach1\\deep-learning-from-scratch-master')   #作業ディレクトリが学習用フォルダのため
 
 #関数の読み込み
 from DLdataset.mnist import load_mnist  #ライブラリにdatasetが存在しているため、そちらを参照しないように名前を"DLdataset"と変更

@@ -5,14 +5,14 @@ import pickle
 #MNISTデータを読み込む関数を定義
 def read_data():
     import sys
-    sys.path.append('C:\\Users\\mstk\\Python学習用フォルダ\\DeepLearning\\DL_from_Scrach1\\deep-learning-from-scratch-master')
+    sys.path.append('DeepLearning\\DL_from_Scrach1\\deep-learning-from-scratch-master')
     from DLdataset.mnist import load_mnist
     (x_train, t_train), (x_test, t_test) = load_mnist(normalize=True, flatten=True, one_hot_label=False)
     return x_test, t_test
 
 #ネットワークの学習済みパラメータを読み込む
 def read_network():
-    with open("C:\\Users\\mstk\\Python学習用フォルダ\\DeepLearning\\DL_from_Scrach1\\deep-learning-from-scratch-master\\ch03\\sample_weight.pkl",'rb') as f:
+    with open("DeepLearning\\DL_from_Scrach1\\deep-learning-from-scratch-master\\ch03\\sample_weight.pkl",'rb') as f:
         network = pickle.load(f)
     return network
 
